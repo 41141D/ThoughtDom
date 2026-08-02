@@ -1,4 +1,6 @@
-const API_URL = "https://thoughtdom-api.onrender.com"
+const API_BASE = "https://thoughtdom-api.onrender.com";
+
+
 export function mediaUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
   return `${API_BASE}${path}`;
