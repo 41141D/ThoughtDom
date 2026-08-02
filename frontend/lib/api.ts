@@ -1,5 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
-
+const API_URL = "https://thoughtdom-api.onrender.com"
 export function mediaUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
   return `${API_BASE}${path}`;
