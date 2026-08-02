@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #12131a;
+  color: #e8e6f0;
+  font-family: "Inter", sans-serif;
+}
+
+.reply-type-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* Keyboard-only focus ring. :focus-visible means mouse clicks don't get a
+   ring (avoids the "why is there a box around every button I click"
+   complaint) but Tab navigation always does -- this was previously entirely
+   absent outside of text inputs, so keyboard users had no way to see where
+   they were on the page. */
+:focus-visible {
+  outline: 2px solid #7c6cff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* The signature element: a steel-man restatement reads as a "mirror" --
+   quoting the other side back before disagreement is allowed to speak. */
+.steelman-mirror {
+  border-left: 3px solid #f2a65a;
+  background: linear-gradient(90deg, rgba(242, 166, 90, 0.08), transparent);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0 0.6rem 0.6rem 0;
+  font-style: italic;
+  color: #cfcdd9;
+}
+
+/* ---- Phase 1: motion & loading primitives ---- */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.35s ease-out both;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #1b1d27 25%, #242733 37%, #1b1d27 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Soft radial glow used behind hero sections -- purely decorative,
+   respects the existing "ink/signal" palette instead of introducing new color. */
+.hero-glow {
+  background: radial-gradient(60% 100% at 20% 0%, rgba(124, 108, 255, 0.16), transparent 70%),
+    radial-gradient(40% 80% at 90% 10%, rgba(79, 209, 197, 0.08), transparent 70%);
+}
+
+/* Scroll-triggered reveal, used by the Reveal component. Every other page
+   in this app already assumes JS (client-rendered fetches, localStorage
+   drafts), so no separate no-JS fallback here -- consistent with that. */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respected globally, not just on the new page -- none of the app's
+   existing animations (fade-in-up, shimmer) checked for this before. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-fade-in-up,
+  .skeleton {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
