@@ -13,7 +13,10 @@ app = FastAPI(title="ThoughtDom API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000","https://your-vercel-domain.vercel.app"],
+    allow_origins=[
+        "https://thought-dom.vercel.app",
+        "http://localhost:3000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
