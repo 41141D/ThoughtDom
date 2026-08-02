@@ -1,10 +1,11 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { clearSession, getUsername } from "../lib/api";
 
 export default function NavBar() {
+  const t = useTranslations();
   const [username, setUsername] = useState<string | null>(null);
 
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function NavBar() {
         </Link>
         <div className="flex items-center gap-4 text-sm">
           <Link href="/why" className="text-muted hover:text-text">
-            Why
+            {t("nav.why")}
           </Link>
           {username ? (
             <>
@@ -27,7 +28,7 @@ export default function NavBar() {
                 {username}
               </Link>
               <Link href="/create" className="text-signal font-medium">
-                New post
+                {t("post.newPost")}
               </Link>
               <button
                 onClick={() => {
@@ -36,16 +37,16 @@ export default function NavBar() {
                 }}
                 className="text-muted hover:text-danger"
               >
-                Sign out
+                {t("nav.signOut")}
               </button>
             </>
           ) : (
             <>
               <Link href="/login" className="text-muted hover:text-text">
-                Sign in
+                {t("nav.signIn")}
               </Link>
               <Link href="/register" className="text-signal font-medium">
-                Get a name
+                {t("nav.getName")}
               </Link>
             </>
           )}
