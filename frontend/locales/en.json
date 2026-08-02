@@ -1,1 +1,134 @@
-
+{
+  "nav": {
+    "why": "Why",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "newPost": "New Post",
+    "getName": "Get Name"
+  },
+  "auth": {
+    "title": "Get an Anonymous Name",
+    "subtitle": "No email. No real name. One will be assigned to you, or you can choose your own.",
+    "preferredName": "Preferred Name (Optional)",
+    "password": "Password",
+    "createAccount": "Create Anonymous Account",
+    "login": "Log In"
+  },
+  "post": {
+    "newPost": "New Post",
+    "title": "Title",
+    "body": "Body",
+    "submit": "Publish"
+  },
+  "comments": {
+    "reply": "Reply",
+    "replies": "Replies",
+    "writeReply": "Write a reply"
+  },
+  "challenge": {
+    "neutral": "Neutral",
+    "agree": "Agree",
+    "challenge": "Challenge",
+    "fairSummary": "First summarize the idea fairly, then write your critique."
+  },
+  "votes": {
+    "upvote": "Upvote",
+    "downvote": "Downvote"
+  },
+  "errors": {
+    "failedFetch": "Failed to fetch data",
+    "somethingWrong": "Something went wrong"
+  },
+  "why": {
+    "title": "Why ThoughtDom Exists",
+    "corePrinciple": {
+      "title": "Core Principle",
+      "text": "Understand first.\nEverything else on ThoughtDom follows from that one rule.\nWe built a place where disagreement has to earn its place — by proving, first, that it understood what it's disagreeing with."
+    },
+    "existence": {
+      "title": "Why ThoughtDom Exists",
+      "paragraphs": [
+        "Most places to disagree online reward the wrong things. They reward speed over understanding — a reaction posted in ten seconds travels further than a considered reply written in ten minutes. They reward identity over ideas — an argument gets read differently depending on who is credited with making it, which means it is rarely judged on its own terms. And they reward performance over honesty: it is often more rewarding, in the moment, to look right in front of an audience than to actually be right, or to admit you might not be.",
+        "None of this happened by accident. It happened because the platforms optimizing for it were optimizing for something else entirely — time spent, attention captured, engagement sustained. Understanding was never the goal there. At best, it was a side effect.",
+        "ThoughtDom starts from a different goal. Not attention. Not identity. Understanding — as the actual point, not something we hope shows up on its own."
+      ]
+    },
+    "beliefs": {
+      "title": "What We Believe",
+      "principles": [
+        {
+          "principle": "Curiosity over certainty.",
+          "description": "Being certain feels good. Being curious is more useful. We'd rather someone leave a conversation with a better question than a reinforced answer."
+        },
+        {
+          "principle": "Understanding before disagreement.",
+          "description": "You're always welcome to disagree. But the burden is on you to show, first, that you understood what you're disagreeing with. Understanding isn't surrender — it's the price of admission to a real argument."
+        },
+        {
+          "principle": "Ideas over identity.",
+          "description": "An idea should stand or fall on its own reasoning — not on who said it, how long they've been here, or how many people already agree with them."
+        },
+        {
+          "principle": "Privacy over surveillance.",
+          "description": "We don't need to know who you are to know what you think. Your ideas don't require your identity attached to them in order to matter."
+        },
+        {
+          "principle": "Respect over personal attacks.",
+          "description": "Disagreeing with an idea is not the same as attacking the person who holds it. We intend to keep that distinction clear, even when it's inconvenient."
+        },
+        {
+          "principle": "Long-term thinking over instant reactions.",
+          "description": "Some of the best answers take longer than ten seconds to write. We'd rather be a place people return to for a good conversation than a place they check out of habit."
+        },
+        {
+          "principle": "Honest discussion over winning arguments.",
+          "description": "A conversation that ends with someone actually changing their mind is worth more than one that ends with someone declared the winner. We're not building a scoreboard."
+        }
+      ]
+    },
+    "steelManGate": {
+      "title": "The Steel-Man Gate",
+      "paragraphs": [
+        "Most disagreements online skip a very basic step: proving you understood what you're disagreeing with.",
+        "It's an old idea, older than the internet. Before you criticize a position, you should be able to state it back so clearly and so fairly that the person who holds it would recognize it — and agree that you've represented it honestly. Only then have you earned the right to say why you think it's wrong. That's called steelmanning: the opposite of a strawman, which is easy to knock down because it was never real to begin with.",
+        "ThoughtDom asks for that step before a challenge can be posted. Not because disagreement is unwelcome — disagreement is, in fact, the whole point of a place built for ideas. But because disagreement without understanding usually isn't disagreement at all. It's a reaction to a caricature, aimed at a person, that happens to be wearing their argument's clothes.",
+        "This isn't a test you pass once. It's a habit the platform asks you to practice every time you want to push back. Some people will find that this slows them down. It's supposed to. The slowness isn't a flaw in the design — it's the design."
+      ]
+    },
+    "neverBecome": {
+      "title": "What ThoughtDom Will Never Become",
+      "intro": "Some of what came above is as much about what we're avoiding as what we're building toward. So we want to say it plainly now, while it's easy to promise — because promises like these tend to get harder to keep as a platform grows, not easier.",
+      "items": [
+        {
+          "title": "An addiction machine.",
+          "description": "We're not going to design ThoughtDom to be hard to put down. If you finish reading something here and close the app, that's a fine outcome. That was never supposed to be a failure state."
+        },
+        {
+          "title": "A follower-count competition.",
+          "description": "We don't think a person's ideas should be weighed by how many people already follow them, so we're not going to build the mechanics that make that comparison feel important."
+        },
+        {
+          "title": "A place where popularity outweighs ideas.",
+          "description": "A quiet, well-reasoned point should be able to stand next to a popular one and be judged on its own terms — not buried beneath it by default."
+        },
+        {
+          "title": "A platform that rewards outrage for engagement.",
+          "description": "If being provocative ever becomes the fastest way to be seen here, that's a failure in the design, and it will need to be fixed — not left in place because it's working."
+        },
+        {
+          "title": "A surveillance-driven advertising platform.",
+          "description": "We don't think a place built around honest conversation should also be quietly building a profile of everyone having one. Those two things don't coexist well, so we're not going to try to make them."
+        }
+      ]
+    },
+    "vision": {
+      "title": "Our Vision",
+      "paragraphs": [
+        "We are not trying to become the biggest place to talk on the internet. We don't think that's the same goal as becoming one of the best.",
+        "Our measure of success isn't time spent, or accounts created, or how often people open the app. It's simpler, and harder to fake: did a conversation here help two people understand each other a little better than they did before it started? That's the only metric we actually care about. Everything else is a means, or a distraction.",
+        "If ThoughtDom is still around in ten years, we'd rather it be small and trusted than large and hollow — the place people point to and say “that's where I actually understood the other side of something,” rather than the place with the most users. That's a slower way to build something. We think it's the only way to build something worth keeping.",
+        "The internet has enough places to be heard. We built one more place to be understood."
+      ]
+    }
+  }
+}
